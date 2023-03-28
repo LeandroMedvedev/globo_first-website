@@ -1,0 +1,154 @@
+/* ------------------------- */
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ------------------------- */
+/* COLORS */
+:root {
+  --royal-blue: #4365fc;
+  --black-russian: #03031b;
+  --light-grey: #d2d2d2;
+  --charcoal: #454545;
+}
+
+/* ------------------------- */
+/* GENERAL */
+body {
+  padding: 20px;
+}
+
+/* ------------------------- */
+/* HEADER */
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ------------------------- */
+/* MAIN */
+main p {
+  color: var(--black-russian);
+}
+main p:first-child {
+  margin: 15px 0 30px 0;
+  font-weight: bold;
+  text-align: center;
+}
+main p:nth-child(2) {
+  text-align: center;
+}
+
+#top-nav {
+  width: 58%;
+  min-width: 420px;
+  height: 110px;
+  display: flex;
+  flex-flow: column wrap;
+  border-top: 1px solid var(--light-grey);
+  border-bottom: 1px solid var(--charcoal);
+  padding: 15px 0;
+  margin: 15px 0;
+}
+
+#programs-nav li a {
+  padding-left: 4px;
+}
+#programs-nav li:after {
+  content: " |";
+  color: var(--royal-blue);
+}
+#programs-nav li:last-child:after {
+  content: "";
+}
+
+#lonely-li {
+  list-style-type: disc;
+  margin: 0 0 50px 16px;
+}
+
+div {
+  margin: 100px 0 40px 0;
+}
+
+span {
+  color: var(--royal-blue);
+}
+
+/* ------------------------- */
+/* FOOTER */
+footer {
+  padding: 18px 5px 30px 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+li {
+  list-style-type: none;
+}
+
+/* ------------------------- */
+/* MEDIA QUERIES */
+
+/* ------------------------------------- */
+/* 670PX */
+@media only screen and (max-width: 670px) {
+  div img {
+    width: 440px;
+  }
+
+  #programs-nav {
+    flex-direction: column;
+  }
+}
+
+/* ------------------------------------- */
+/* 480PX */
+@media only screen and (max-width: 480px) {
+  #top-nav {
+    width: max-content;
+    min-width: 0;
+    height: 200px;
+  }
+}
+
+main div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#programs-nav {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* ------------------------------------- */
+/* 450PX */
+@media only screen and (max-width: 450px) {
+  body {
+    padding: 5px;
+  }
+
+  header img {
+    width: 208px;
+  }
+
+  #globotv-img {
+    width: 180px;
+  }
+
+  div img {
+    width: 300px;
+  }
+
+  footer {
+    font-size: 14px;
+  }
+}
